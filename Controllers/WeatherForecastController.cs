@@ -8,8 +8,8 @@ namespace GitTest.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -29,5 +29,12 @@ namespace GitTest.Controllers
             })
             .ToArray();
         }
+
+        [NonAction]
+        public static void Test()
+        {
+            Console.WriteLine("Test Practice");
+        }
+       
     }
 }
